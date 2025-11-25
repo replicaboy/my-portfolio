@@ -14,7 +14,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'Siksha & Diksha Platform',
-      description: 'Educational platform built for Yuva Chetna Samiti with quiz functionality and payment integration.',
+      description: 'Educational platform built for a coaching centre with several functionality and payment integration.',
       longDescription: 'A comprehensive educational platform featuring interactive quizzes, user authentication with JWT, Razorpay payment gateway integration, and real-time email notifications using Nodemailer. Built with MERN stack and deployed on Vercel.',
       image: '/projects/siksha-diksha.jpg',
       tags: ['React.js', 'Node.js', 'MongoDB', 'Razorpay', 'Express'],
