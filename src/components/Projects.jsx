@@ -18,8 +18,8 @@ const Projects = () => {
       longDescription: 'A comprehensive educational platform featuring interactive quizzes, user authentication with JWT, Razorpay payment gateway integration, and real-time email notifications using Nodemailer. Built with MERN stack and deployed on Vercel.',
       image: '/projects/siksha-diksha.jpg',
       tags: ['React.js', 'Node.js', 'MongoDB', 'Razorpay', 'Express'],
-      liveUrl: 'https://siksha-diksha.vercel.app',
-      githubUrl: 'https://github.com/hariomthakur/siksha-diksha',
+      liveUrl: 'https://siksha-and-diskha.vercel.app/',
+      githubUrl: 'https://github.com/replicaboy/Siksha_and_diskha',
     },
     {
       id: 2,
@@ -38,8 +38,8 @@ const Projects = () => {
       longDescription: 'Professional portfolio website built with React and Tailwind CSS, featuring Framer Motion animations, dark/light theme toggle, responsive design, and SEO optimization. Deployed on Vercel with CI/CD pipeline.',
       image: '/projects/portfolio.jpg',
       tags: ['React.js', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-      liveUrl: 'https://hariomthakur.vercel.app',
-      githubUrl: 'https://github.com/hariomthakur/portfolio',
+      liveUrl: 'https://my-portfolio-zeta-gules-81.vercel.app/',
+      githubUrl: 'https://github.com/replicaboy/my-portfolio',
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ const Projects = () => {
       image: '/projects/search.jpg',
       tags: ['MongoDB', 'Node.js', 'Vector Search', 'Express'],
       liveUrl: '#',
-      githubUrl: 'https://github.com/hariomthakur/mongodb-search',
+      githubUrl: 'https://github.com/replicaboy/hacking',
     },
   ]
 
