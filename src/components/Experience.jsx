@@ -10,9 +10,9 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Full-Stack Developer',
-      company: 'Yuva Chetna Samiti',
+      company: 'Client Projects',
       period: '2023 - Present',
-      description: 'Developing educational platforms with payment integration, email automation, and quiz functionalities. Built and deployed multiple MERN stack applications on Vercel and Render.',
+      description: 'Developing platforms with payment integration, email automation, and quiz functionalities. Built and deployed multiple MERN stack applications on Vercel and Render.',
       skills: ['React.js', 'Node.js', 'MongoDB', 'Razorpay', 'Vercel'],
       icon: '💼'
     },
