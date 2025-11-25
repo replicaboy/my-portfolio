@@ -97,10 +97,10 @@ const About = () => {
               transition={{ delay: 0.3 }}
               className="grid grid-cols-2 gap-6"
             >
-              <div className="p-6 bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div className="p-6 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-2">🎯</div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Mission</h3>
-                <p className="text-gray-700 dark:text-gray-300">
+                <h3 className="text-xl font-semibold mb-2 text-white">Mission</h3>
+                <p className="text-white font-medium">
                   Creating impactful digital experiences that solve real-world problems
                 </p>
               </div>
