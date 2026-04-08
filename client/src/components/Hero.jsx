@@ -11,7 +11,7 @@ const ROLES = [
 ]
 
 const SOCIAL_LINKS = [
-  { id: 'github', label: 'GitHub', icon: '⌥', href: 'https://github.com/hariomthakur' },
+  { id: 'github', label: 'GitHub', icon: '⌥', href: 'https://github.com/replicaboy' },
   { id: 'linkedin', label: 'LinkedIn', icon: '◈', href: 'https://linkedin.com/in/hariomthakur' },
   { id: 'twitter', label: 'Twitter', icon: '◉', href: 'https://twitter.com/hariomthakur' },
 ]

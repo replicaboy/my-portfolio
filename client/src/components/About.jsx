@@ -81,7 +81,7 @@ export default function About() {
             </div>
 
             <div className="about-actions">
-              <a id="about-github-btn" href="https://github.com/hariomthakur" target="_blank" rel="noreferrer" className="btn btn-outline">
+              <a id="about-github-btn" href="https://github.com/replicaboy" target="_blank" rel="noreferrer" className="btn btn-outline">
                 GitHub Profile ↗
               </a>
               <a id="about-resume-btn" href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">

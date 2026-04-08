@@ -42,7 +42,7 @@ export default function Footer() {
             <p className="footer-links-title">Connect</p>
             <div className="footer-links">
               {[
-                { label: 'GitHub', href: 'https://github.com/hariomthakur', id: 'footer-github' },
+                { label: 'GitHub', href: 'https://github.com/replicaboy', id: 'footer-github' },
                 { label: 'LinkedIn', href: 'https://linkedin.com/in/hariomthakur', id: 'footer-linkedin' },
                 { label: 'Twitter', href: 'https://twitter.com/hariomthakur', id: 'footer-twitter' },
                 { label: 'Email', href: 'mailto:hariomthakur@gmail.com', id: 'footer-email' },
