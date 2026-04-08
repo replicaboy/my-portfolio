@@ -45,7 +45,7 @@ export default function Footer() {
                 { label: 'GitHub', href: 'https://github.com/replicaboy', id: 'footer-github' },
                 { label: 'LinkedIn', href: 'https://linkedin.com/in/hariomthakur', id: 'footer-linkedin' },
                 { label: 'Twitter', href: 'https://twitter.com/hariomthakur', id: 'footer-twitter' },
-                { label: 'Email', href: 'mailto:hariomthakur@gmail.com', id: 'footer-email' },
+                { label: 'Email', href: 'mailto:harikrdbg121@gmail.com', id: 'footer-email' },
               ].map(link => (
                 <a
                   key={link.id}

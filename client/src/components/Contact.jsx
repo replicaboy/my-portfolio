@@ -5,8 +5,8 @@ const API_URL = import.meta.env.VITE_API_URL || ''
 import './Contact.css'
 
 const CONTACT_INFO = [
-  { icon: '📧', label: 'Email', value: 'hariomthakur@gmail.com', href: 'mailto:hariomthakur@gmail.com' },
-  { icon: '📱', label: 'Phone', value: '+91 XXXXX XXXXX', href: 'tel:+91XXXXXXXXXX' },
+  { icon: '📧', label: 'Email', value: 'harikrdbg121@gmail.com', href: 'mailto:harikrdbg121@gmail.com' },
+  { icon: '📱', label: 'Phone', value: '+91 92636 13438', href: 'tel:+919263613438' },
   { icon: '📍', label: 'Location', value: 'India 🇮🇳', href: '#' },
   { icon: '⏱️', label: 'Response Time', value: 'Within 24 hours', href: '#' },
 ]
@@ -93,9 +93,9 @@ export default function Contact() {
               <p className="social-row-label">Also find me on:</p>
               <div className="social-row-links">
                 {[
-                  { name: 'GitHub', href: 'https://github.com/hariomthakur', id: 'contact-github' },
+                  { name: 'GitHub', href: 'https://github.com/replicaboy', id: 'contact-github' },
                   { name: 'LinkedIn', href: 'https://linkedin.com/in/hariomthakur', id: 'contact-linkedin' },
-                  { name: 'Twitter', href: 'https://twitter.com/hariomthakur', id: 'contact-twitter' },
+                  { name: 'Email', href: 'mailto:harikrdbg121@gmail.com', id: 'contact-email' },
                 ].map(s => (
                   <a key={s.name} id={s.id} href={s.href} target="_blank" rel="noreferrer" className="social-chip">
                     {s.name} ↗

@@ -8,20 +8,25 @@ const TRAITS = [
   { emoji: '🌐', title: 'Open Source Fan', desc: 'I believe in the power of community. I contribute, learn, and share openly.' },
 ]
 
-function useIntersection(ref, options = {}) {
+function useIntersection(ref) {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view')
+          // Also add in-view to all animated children
+          entry.target.querySelectorAll('.slide-in-left, .slide-in-right, .about-bio, .about-traits').forEach(el => {
+            el.classList.add('in-view')
+          })
+          observer.unobserve(entry.target)
         }
       })
-    }, { threshold: 0.15, ...options })
+    }, { threshold: 0.05 })
 
     const el = ref.current
     if (el) observer.observe(el)
     return () => el && observer.unobserve(el)
-  }, [ref, options])
+  }, [])
 }
 
 export default function About() {
