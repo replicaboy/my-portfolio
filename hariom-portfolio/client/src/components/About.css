@@ -1,0 +1,237 @@
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-orb {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+  top: 50%;
+  right: -200px;
+  transform: translateY(-50%);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Bio */
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.about-bio.in-view, .slide-in-left.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s;
+}
+
+.slide-in-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Avatar */
+.about-avatar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.about-avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.avatar-initials {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  z-index: 1;
+}
+
+.avatar-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+}
+
+.ring-1 {
+  inset: -8px;
+  border-color: rgba(0, 212, 255, 0.3);
+  animation: spin-slow 6s linear infinite;
+}
+
+.ring-2 {
+  inset: -16px;
+  border-color: rgba(124, 58, 237, 0.2);
+  animation: spin-slow 10s linear infinite reverse;
+}
+
+.about-name-block h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about-name-block p {
+  font-size: 0.9rem;
+  color: var(--accent-blue);
+  font-family: var(--font-code);
+  margin: 2px 0 8px;
+}
+
+.location-badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Text */
+.about-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.highlight-inline {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.about-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Traits */
+.about-traits {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.trait-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  cursor: default;
+}
+
+.trait-emoji {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.trait-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.trait-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Quick facts */
+.quick-facts {
+  padding: 20px;
+  cursor: default;
+}
+
+.quick-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  font-family: var(--font-code);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.facts-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.facts-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+
+.fact-icon { font-size: 16px; }
+
+.fact-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-right: 4px;
+}
+
+/* Scroll reveal */
+.about-section .in-view {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-bio, .about-traits {
+    opacity: 1;
+    transform: none;
+  }
+}

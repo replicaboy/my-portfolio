@@ -1,0 +1,243 @@
+.timeline-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+  top: 20%;
+  left: -100px;
+}
+
+.timeline-orb-2 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+  bottom: 20%;
+  right: -100px;
+  animation-delay: 2.5s;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Center line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255,255,255,0.04);
+  transform: translateX(-50%);
+}
+
+.timeline-line-fill {
+  width: 100%;
+  background: linear-gradient(to bottom, var(--accent-blue), var(--accent-violet), var(--accent-pink));
+  height: 100%;
+  animation: lineGrow 2s ease both;
+}
+
+@keyframes lineGrow {
+  from { height: 0%; }
+  to { height: 100%; }
+}
+
+/* Items */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+  position: relative;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.timeline-item.left {
+  flex-direction: row-reverse;
+  padding-right: calc(50% + 20px);
+}
+
+.timeline-item.right {
+  padding-left: calc(50% + 20px);
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%, 0);
+  width: 44px;
+  height: 44px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-dot-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-accent);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-dot-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 212, 255, 0.15);
+  animation: pulse-glow 2.5s ease infinite;
+}
+
+.timeline-item.highlight .timeline-dot-icon {
+  border-color: var(--accent-violet);
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.timeline-item.current .timeline-dot-icon {
+  border-color: var(--accent-pink);
+  background: rgba(236, 72, 153, 0.1);
+  animation: pulse-glow 2s ease infinite;
+}
+
+/* Card */
+.timeline-card {
+  flex: 1;
+  padding: 22px;
+  cursor: default;
+  max-width: 380px;
+}
+
+.timeline-item.left .timeline-card {
+  margin-right: 0;
+  text-align: right;
+}
+
+.timeline-item.left .timeline-tags {
+  justify-content: flex-end;
+}
+
+.timeline-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.timeline-item.left .timeline-card-header {
+  justify-content: flex-end;
+}
+
+.timeline-year {
+  font-family: var(--font-code);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: rgba(0, 212, 255, 0.08);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+}
+
+.timeline-current-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-pink);
+  background: rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.25);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+.timeline-milestone-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+.timeline-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.timeline-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Highlight card border */
+.timeline-item.highlight .timeline-card {
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.timeline-item.current .timeline-card {
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+/* Mobile — single column */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    flex-direction: row;
+    padding-left: 56px;
+    padding-right: 0;
+  }
+
+  .timeline-dot {
+    left: 20px;
+    top: 16px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .timeline-dot-icon {
+    font-size: 0.9rem;
+  }
+
+  .timeline-card {
+    text-align: left !important;
+    max-width: 100%;
+  }
+
+  .timeline-item.left .timeline-card-header,
+  .timeline-item.left .timeline-tags {
+    justify-content: flex-start;
+  }
+}

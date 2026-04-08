@@ -1,0 +1,75 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  animation: preloaderFadeOut 0.5s ease 1.8s forwards;
+}
+
+@keyframes preloaderFadeOut {
+  to { opacity: 0; pointer-events: none; }
+}
+
+.preloader-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.preloader-logo {
+  font-family: var(--font-code);
+  font-size: 2.5rem;
+  font-weight: 700;
+  animation: logoReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+}
+
+@keyframes logoReveal {
+  from { opacity: 0; transform: scale(0.5) rotate(-10deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+.logo-bracket {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-name {
+  color: var(--text-primary);
+  margin: 0 4px;
+}
+
+.preloader-bar {
+  width: 200px;
+  height: 3px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease 0.8s both;
+}
+
+.preloader-progress {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+  animation: progressFill 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.8s both;
+}
+
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.preloader-text {
+  font-family: var(--font-code);
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  animation: fadeIn 0.5s ease 0.9s both;
+}
