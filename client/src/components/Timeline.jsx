@@ -2,7 +2,7 @@ import './Timeline.css'
 
 const TIMELINE_EVENTS = [
   {
-    year: '2022',
+    year: '2024',
     title: 'The Spark — First Line of Code',
     desc: 'Started learning HTML and CSS in 11th grade. Built my first static website — a tribute page. That moment of seeing code come alive on screen changed everything.',
     tags: ['HTML', 'CSS'],
@@ -10,7 +10,7 @@ const TIMELINE_EVENTS = [
     side: 'left',
   },
   {
-    year: '2022',
+    year: '2024',
     title: 'JavaScript clicks — DOM Mastery',
     desc: 'Picked up JavaScript and fell in love with interactivity. Built multiple mini-projects: a calculator, a quiz app, a to-do list. Discovered the magic of the DOM.',
     tags: ['JavaScript', 'DOM', 'ES6+'],
@@ -18,7 +18,7 @@ const TIMELINE_EVENTS = [
     side: 'right',
   },
   {
-    year: '2023',
+    year: '2024',
     title: 'React — Leveling Up Frontend',
     desc: '12th grade: Dived into React.js. The component model and state management blew my mind. Built my first multi-page React app and fell in love with the ecosystem.',
     tags: ['React', 'JSX', 'Hooks', 'Vite'],
@@ -26,7 +26,7 @@ const TIMELINE_EVENTS = [
     side: 'left',
   },
   {
-    year: '2023',
+    year: '2025',
     title: 'The Backend Awakening — Node.js & Express',
     desc: 'Ventured into the backend world. Learned Node.js, built REST APIs with Express, handled routing, middleware, and understood the request-response cycle deeply.',
     tags: ['Node.js', 'Express', 'REST API'],
@@ -34,7 +34,7 @@ const TIMELINE_EVENTS = [
     side: 'right',
   },
   {
-    year: '2023',
+    year: '2025',
     title: 'MongoDB — Completing the Stack',
     desc: 'Integrated MongoDB and Mongoose into my projects. Designed my first schema, performed CRUD operations, and finally became a full-stack developer.',
     tags: ['MongoDB', 'Mongoose', 'Atlas'],
@@ -42,7 +42,7 @@ const TIMELINE_EVENTS = [
     side: 'left',
   },
   {
-    year: '2024',
+    year: '2026',
     title: '12th Passed — Chose Code Over College',
     desc: 'Passed 12th grade exams. Made the bold decision to pursue my coding journey full-time rather than enrolling in a conventional degree program. No regrets.',
     tags: ['Milestone', '12th Board', 'Self-Taught Decision'],
@@ -51,7 +51,7 @@ const TIMELINE_EVENTS = [
     highlight: true,
   },
   {
-    year: '2024',
+    year: '2026',
     title: 'First Freelance Project — Real Client',
     desc: 'Landed my first paid freelance project: a full-stack web app for a local business. Delivered on time, exceeded expectations, and got my first testimonial.',
     tags: ['Freelance', 'MERN Stack', 'Client Work'],
@@ -59,7 +59,7 @@ const TIMELINE_EVENTS = [
     side: 'left',
   },
   {
-    year: '2025',
+    year: '2026',
     title: 'Deep-diving Advanced Concepts',
     desc: 'Currently exploring advanced topics: authentication flows (JWT, OAuth), WebSockets, performance optimization, TypeScript, and cloud deployment on Railway & Vercel.',
     tags: ['JWT', 'OAuth', 'WebSockets', 'TypeScript', 'Cloud'],
