@@ -93,8 +93,8 @@ export default function Contact() {
               <p className="social-row-label">Also find me on:</p>
               <div className="social-row-links">
                 {[
-                  { name: 'GitHub', href: 'https://github.com/replicaboy', id: 'contact-github' },
-                  { name: 'LinkedIn', href: 'https://linkedin.com/in/hariomthakur', id: 'contact-linkedin' },
+                  { name: 'GitHub', href: 'https://github.com/radhethakur-07', id: 'contact-github' },
+                  { name: 'LinkedIn', href: 'www.linkedin.com/in/hariom-thakur-868b11401', id: 'contact-linkedin' },
                   { name: 'Email', href: 'mailto:harikrdbg121@gmail.com', id: 'contact-email' },
                 ].map(s => (
                   <a key={s.name} id={s.id} href={s.href} target="_blank" rel="noreferrer" className="social-chip">
