@@ -207,7 +207,7 @@ export default function Projects() {
         {/* GitHub CTA */}
         <div className="projects-cta">
           <p className="cta-text">Want to see more of my work?</p>
-          <a id="github-all-btn" href="https://github.com/hariomthakur" target="_blank" rel="noreferrer" className="btn btn-outline">
+          <a id="github-all-btn" href="https://github.com/radhethakur-07" target="_blank" rel="noreferrer" className="btn btn-outline">
             View All on GitHub ↗
           </a>
         </div>
