@@ -389,7 +389,7 @@ return ( <section className="section projects-section" id="projects"> <div class
     </div>
   </div>
 </section>
-```
+
 
 )
 }
