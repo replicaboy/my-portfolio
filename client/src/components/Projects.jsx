@@ -243,9 +243,7 @@ return ( <section className="section projects-section" id="projects"> <div class
 
               <div
                 className="project-icon-glow"
-                style={{
-                  background: project.color,
-                }}
+                style={{ background: project.color }}
               />
             </div>
 
@@ -278,9 +276,7 @@ return ( <section className="section projects-section" id="projects"> <div class
               <span
                 key={tag}
                 className="project-tag"
-                style={{
-                  '--tag-color': project.color,
-                }}
+                style={{ '--tag-color': project.color }}
               >
                 {tag}
               </span>
@@ -297,11 +293,7 @@ return ( <section className="section projects-section" id="projects"> <div class
               <ul>
                 {project.features.map((feature) => (
                   <li key={feature}>
-                    <span
-                      style={{
-                        color: project.color,
-                      }}
-                    >
+                    <span style={{ color: project.color }}>
                       ▸
                     </span>{' '}
                     {feature}
@@ -364,9 +356,7 @@ return ( <section className="section projects-section" id="projects"> <div class
                   strokeWidth="2"
                 >
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-
                   <polyline points="15 3 21 3 21 9" />
-
                   <line
                     x1="10"
                     y1="14"
